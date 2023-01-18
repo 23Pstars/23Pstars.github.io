@@ -139,6 +139,7 @@ Tool, layanan, dan perangkat yang saya gunakan sehari-hari.
 - [Dicoding](https://www.dicoding.com/)
 - [Kelas Kita](https://kelaskita.com/)
 - [Free Code School](https://www.freecodecamp.com/)
+- [Scaler Topics](https://www.scaler.com/topics/)
 
 **Magz and Info**
 - [Codepolitan](https://www.codepolitan.com)
