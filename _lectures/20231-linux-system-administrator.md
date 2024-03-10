@@ -6,8 +6,4 @@ link_moodle: "#"
 ---
 
 1. Introduction
-2. Footprinting and Reconnaissance
-3. Vulnerability Analysis
-4. Sniffing
-5. Denial of Service
-6. SQL Injection
+2. - tbd -
