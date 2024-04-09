@@ -1,6 +1,4 @@
----
-layout: default
----
+--- layout: default ---
 
 <div id="lectures">
 
@@ -12,10 +10,6 @@ layout: default
                 <td class="left">
                     <p class="name">
                         <i class="icon-address-card-o"></i> {{ page.me_name }}
-                    </p>
-                    <p class="whatsapp">
-                        <i class="icon-whatsapp"></i>
-                        <a href="https://wa.me/{{ page.me_whatsapp }}" target="_blank">{{ page.me_whatsapp }}</a>
                     </p>
                     <p class="whatsapp">
                         <i class="icon-telegram"></i>
@@ -52,8 +46,7 @@ layout: default
                 </td>
                 <td>
                     <a href="{{ page.acad_google_scholar }}" target="_blank">
-                        <img src="assets/images/academic/google-scholar.png"
-                            alt="Google Scholar - {{ page.me_name }}" />
+                        <img src="assets/images/academic/google-scholar.png" alt="Google Scholar - {{ page.me_name }}" />
                     </a>
                 </td>
                 <td>
@@ -95,8 +88,7 @@ layout: default
             <a href="#" onclick="_auth()">
                 🔐 Lab II - Komunikasi Data & Sistem Tertanam
             </a>
-            <br />
-            👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻
+            <br /> 👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻&nbsp;👩🏻‍💻
         </div>
 
         <script>
@@ -114,9 +106,7 @@ layout: default
     </div>
 
     <ul>
-        {% assign sorted = site.lectures | sort: 'tahun_akademik' %}
-        {% for mk in sorted reversed %}
-        {% assign mk_id = mk.tahun_akademik | append: '-' | append: mk.judul | slugify %}
+        {% assign sorted = site.lectures | sort: 'tahun_akademik' %} {% for mk in sorted reversed %} {% assign mk_id = mk.tahun_akademik | append: '-' | append: mk.judul | slugify %}
         <li style="list-style-type: square">
             {{ mk.tahun_akademik }} &mdash;
             <a href="#{{ mk_id }}">
@@ -130,9 +120,7 @@ layout: default
 
     <div class="_lists">
 
-        {% assign sorted = site.lectures | sort: 'tahun_akademik' %}
-        {% for mk in sorted reversed %}
-        {% assign mk_id = mk.tahun_akademik | append: '-' | append: mk.judul | slugify %}
+        {% assign sorted = site.lectures | sort: 'tahun_akademik' %} {% for mk in sorted reversed %} {% assign mk_id = mk.tahun_akademik | append: '-' | append: mk.judul | slugify %}
         <hr />
         <div class="_item" id="{{ mk_id }}">
             <h4 class="_title">
@@ -142,19 +130,13 @@ layout: default
                 </a>
             </h4>
             <div class="_meta">
-                {{ mk.tahun_akademik2 }}
-                {% if mk.kontrak_kuliah %}
-                &nbsp;&nbsp;&mdash;&nbsp;
+                {{ mk.tahun_akademik2 }} {% if mk.kontrak_kuliah %} &nbsp;&nbsp;&mdash;&nbsp;
                 <a href="{{ mk.kontrak_kuliah }}" target="_blank">
                     Kontrak Kuliah
-                </a>
-                {% endif %}
-                {% if mk.link_moodle %}
-                &nbsp;&nbsp;&mdash;&nbsp;
+                </a> {% endif %} {% if mk.link_moodle %} &nbsp;&nbsp;&mdash;&nbsp;
                 <a href="{{ mk.link_moodle }}" target="_blank">
                     Materi
-                </a>
-                {% endif %}
+                </a> {% endif %}
             </div>
             <div class="_content">
                 {{ mk.content }}
@@ -166,8 +148,7 @@ layout: default
                 </a>
             </div>
         </div>
-        <br /><br /><br />
-        {% endfor %}
+        <br /><br /><br /> {% endfor %}
 
     </div>
 
