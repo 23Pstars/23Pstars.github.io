@@ -1,6 +1,8 @@
 ---
 layout: lecture
 me_name: Ahmad Zafrullah
+me_pgp: 249E<span></span>996D<span></span>108B<span></span>8D7F
+me_pgp_url: https://keys.openpgp.org/vks/v1/by-fingerprint/C94DA5EAB31D16273E90E555249E996D108B8D7F
 me_telegram: "+ebkKNW_iCIQ0ZDhl"
 me_email: zaf@unram.ac.id
 me_web: https://zaf.web.id

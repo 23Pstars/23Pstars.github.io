@@ -102,6 +102,23 @@
           font-weight: bold;
         }
 
+        &.pgp {
+
+          a {
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+            background-color: #F9F2F4;
+            color: #ca4440;
+            font-size: 18px;
+            white-space: nowrap;
+
+            span {
+              display: inline-block;
+              width: 8px;
+            }
+          }
+
+        }
+
         i {
           padding-right: 6px;
         }
