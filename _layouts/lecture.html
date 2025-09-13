@@ -52,7 +52,8 @@ layout: default
                 </td>
                 <td>
                     <a href="{{ page.acad_google_scholar }}" target="_blank">
-                        <img src="assets/images/academic/google-scholar.png" alt="Google Scholar - {{ page.me_name }}" />
+                        <img src="assets/images/academic/google-scholar.png"
+                            alt="Google Scholar - {{ page.me_name }}" />
                     </a>
                 </td>
                 <td>
@@ -111,37 +112,28 @@ layout: default
 
     </div>
 
-    <ul>
-        {% assign sorted = site.lectures | sort: 'tahun_akademik' %} {% for mk in sorted reversed %} {% assign mk_id = mk.tahun_akademik | append: '-' | append: mk.judul | slugify %}
-        <li style="list-style-type: square">
-            {{ mk.tahun_akademik }} &mdash;
-            <a href="#{{ mk_id }}">
-                {{ mk.judul }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
-
-    <br /><br /><br />
-
     <div class="_lists">
 
-        {% assign sorted = site.lectures | sort: 'tahun_akademik' %} {% for mk in sorted reversed %} {% assign mk_id = mk.tahun_akademik | append: '-' | append: mk.judul | slugify %}
-        <hr />
-        <div class="_item" id="{{ mk_id }}">
+        {% assign sorted = site.lectures | sort: 'tahun_akademik' %}
+        {% for mk in sorted reversed %}
+
+        <div class="_item" id="{{ mk.judul | slugify }}">
             <h4 class="_title">
                 {{ mk.judul }}
-                <a class="mk_id" href="#{{ mk_id }}">
+                <a class="mk_id" href="#{{ mk.judul | slugify }}" title="Link to {{ mk.judul }}">
                     <i class="icon-hash"></i>
                 </a>
             </h4>
             <div class="_meta">
-                {{ mk.tahun_akademik2 }} {% if mk.kontrak_kuliah %} &nbsp;&nbsp;&mdash;&nbsp;
-                <a href="{{ mk.kontrak_kuliah }}" target="_blank">
-                    Kontrak Kuliah
-                </a> {% endif %} {% if mk.link_moodle %} &nbsp;&nbsp;&mdash;&nbsp;
+                <!-- loop through mk.tahun_akademik -->
+                {% for tahun in mk.tahun_akademik %}
+                    <u>{{ tahun }}</u>
+                    {% if forloop.last == false %}, {% endif %}
+                {% endfor %}
+                <br /><br />
+                {% if mk.link_moodle %} &nbsp;&nbsp;&mdash;&nbsp;
                 <a href="{{ mk.link_moodle }}" target="_blank">
-                    Materi
+                    Course Moodle
                 </a> {% endif %}
             </div>
             <div class="_content">
@@ -150,11 +142,11 @@ layout: default
             <hr />
             <div class="_meta">
                 <a href="#lectures">
-                    &uarr; ke atas
+                    &uarr; to the top
                 </a>
             </div>
         </div>
-        <br /><br /><br /> {% endfor %}
+        {% endfor %}
 
     </div>
 

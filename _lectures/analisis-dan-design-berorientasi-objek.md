@@ -1,7 +1,6 @@
 ---
-judul: "Analisis dan Perancangan Berorientasi Objek (C)"
-tahun_akademik: "20172"
-tahun_akademik2: "2017 Genap"
+judul: "Analisis dan Perancangan Berorientasi Objek"
+tahun_akademik: ["20172"]
 ---
 
 1. Konsep Dasar Analisa dan Desain (1)

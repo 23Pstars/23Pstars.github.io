@@ -13,6 +13,100 @@
   padding-top: 10px;
 }
 
+// Base styling for list items across the site. Section-specific rules below
+// (e.g. #lectures, #portfolios) will still override these values when needed.
+._lists {
+  ._item {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    padding: 14px 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(10,10,10,0.04);
+    box-sizing: border-box;
+    transition: transform .12s ease, box-shadow .12s ease;
+    color: #222;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(10,10,10,0.06);
+    }
+
+    ._title {
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    ._meta {
+      color: #666;
+      font-size: 12px;
+    }
+  }
+}
+
+/* Homepage creative styles */
+.home-hero {
+  background: linear-gradient(135deg, #1f2a44 0%, #3b3355 50%, #5a2d6b 100%);
+  color: #fff;
+  padding: 48px 18px;
+  border-radius: 12px;
+  margin: 12px 0 24px;
+  box-shadow: 0 12px 40px rgba(20,20,40,0.35);
+  overflow: hidden;
+
+  .hero-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h1 { font-size: 36px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .lead { color: rgba(255,255,255,0.85); font-size: 16px; }
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.card {
+  display: block;
+  background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(250,250,255,0.9));
+  border: 1px solid rgba(30,30,40,0.06);
+  border-radius: 12px;
+  padding: 18px;
+  text-decoration: none;
+  color: #111;
+  transition: transform .16s ease, box-shadow .16s ease;
+  box-shadow: 0 4px 14px rgba(30,30,60,0.04);
+  backdrop-filter: blur(4px);
+
+  .emoji {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  h3 { margin: 0 0 6px; font-size: 18px; }
+  p { margin: 0; color: #555; font-size: 14px; }
+
+  &:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 18px 48px rgba(20,30,60,0.12);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .home-hero { padding: 30px 12px; }
+  .home-hero h1 { font-size: 26px; }
+}
+
 #presentations, #demos, #lectures, #courses {
   ._lists {
     ._item {
@@ -145,6 +239,7 @@
   ._lists {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
 
     ._item {
       font-size: 12px;
@@ -156,11 +251,7 @@
 
       ._meta {
         color: #333;
-
-        ._author {
-
-        }
-
+        // author styling removed (no custom rules)
         ._url {
           color: #3F51B5;
           font-style: italic;
@@ -172,14 +263,10 @@
       }
 
 
-      &:nth-of-type(2n) {
-        margin-right: 0;
-      }
-
-      display: inline-block;
       margin-bottom: 8px;
-      width: calc(50% - 8px);
-      margin-right: 16px;
+      /* enforce two columns: each item takes half the container minus half the gap */
+      flex: 0 0 calc(50% - 8px);
+      max-width: calc(50% - 8px);
       color: black;
       line-height: 16px;
 
@@ -199,6 +286,19 @@
           background: #ccc;
           transition: transform .2s ease-in-out;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    ._lists {
+      gap: 12px;
+
+      ._item {
+        padding: 10px;
+        font-size: 11px;
+        flex: 0 0 calc(50% - 6px);
+        max-width: calc(50% - 6px);
       }
     }
   }

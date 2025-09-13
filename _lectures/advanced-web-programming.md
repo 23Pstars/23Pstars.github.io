@@ -1,8 +1,7 @@
 ---
-judul: "Pemrograman Web Lanjut"
-tahun_akademik: "20221"
-tahun_akademik2: "2022 Ganjil"
-link_moodle: "https://berajah.if.unram.ac.id/course/view.php?id=251"
+judul: "Advanced Web Programming"
+tahun_akademik: ["20251", "20241", "20231", "20221", "20211", "20201", "20191", "20181"]
+link_moodle: "#"
 ---
 
 1. Introduction

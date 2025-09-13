@@ -1,7 +1,6 @@
 ---
-judul: "Pengantar Teknologi Informasi (A)"
-tahun_akademik: "20172"
-tahun_akademik2: "2017 Genap"
+judul: "Pengantar Teknologi Informasi"
+tahun_akademik: ["20172"]
 ---
 
 1. Pengantar Teknologi Informasi
