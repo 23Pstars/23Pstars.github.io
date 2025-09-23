@@ -5,6 +5,7 @@ layout: default
 I use this page to list my personal activities on the web, visit my [cave](https://zaf.web.id) instead to see more about me.
 
 <section class="home-grid">
+
 	<a class="card" href="portfolios">
 		<div class="emoji">🤓</div>
 		<h3>Portfolios</h3>
@@ -33,6 +34,12 @@ I use this page to list my personal activities on the web, visit my [cave](https
 		<div class="emoji">🎁</div>
 		<h3>Resources</h3>
 		<p>Personal working resources.</p>
+	</a>
+
+	<a class="card" href="resumes">
+		<div class="emoji">📄</div>
+		<h3>Resumes</h3>
+		<p>Professional resume templates.</p>
 	</a>
 
 	<a class="card" href="demos">
