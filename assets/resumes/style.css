@@ -58,7 +58,7 @@ body {
 
 .l-wrap {
   position: relative;
-  padding: 10mm 10mm 14mm 12mm;
+  padding: 6mm;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -74,6 +74,8 @@ body {
   display: grid;
   place-items: center;
   box-shadow: 0 2.4mm 6mm rgba(0, 0, 0, .22);
+  /* Center the photo wrapper horizontally inside the left column */
+  margin: 0 auto;
 }
 
 .photo-wrap img {
@@ -81,6 +83,10 @@ body {
   height: 48mm;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.name-block {
+  text-align: center;
 }
 
 .name {
