@@ -90,7 +90,7 @@ body {
 }
 
 .name {
-  font-size: 6.5mm;
+  font-size: 28px;
   line-height: .95;
   font-weight: 800;
   letter-spacing: .2px;
@@ -98,7 +98,7 @@ body {
 
 .title {
   margin-top: 1.2mm;
-  font-size: 3.2mm;
+  font-size: 16px;
   font-weight: 600;
   opacity: .96;
 }
@@ -154,7 +154,7 @@ body {
 
 /* Right column */
 .right {
-  padding: 16mm 16mm 14mm 16mm;
+  padding: 24px 18px;
 }
 
 h2 {
