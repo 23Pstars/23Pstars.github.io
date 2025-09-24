@@ -11,12 +11,15 @@ layout: default
     {% assign sorted = site.resumes | sort: 'last_updated' %}
     {% for page in sorted reversed %}
       <div class="_item">
+        <a href="{{ page.download_url }}" class="pdf-download pdf-download-top">📄 PDF</a>
         <h4 class="_title">
           <a href="{{ page.page_url }}">
             {{ page.title }}
           </a>
         </h4>
-        <div class="_meta">{{ page.last_updated | date: "%b %-d, %Y" }}</div>
+        <div class="_meta">
+          {{ page.last_updated | date: "%b %-d, %Y" }}
+        </div>
         <div class="_description">{{ page.description }}</div>
       </div>
       <br/>

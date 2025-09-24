@@ -27,6 +27,8 @@ body {
   display: grid;
   grid-template-columns: 86mm 1fr;
   height: 287mm;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* Left column */
@@ -128,6 +130,12 @@ body {
   line-height: 1.35;
 }
 
+.contact .row a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 255, 255, .6);
+}
+
 .contact svg {
   width: 11px;
   height: 11px;
@@ -155,6 +163,7 @@ body {
 /* Right column */
 .right {
   padding: 24px 18px;
+  min-width: 0; /* Allow grid item to shrink below content size */
 }
 
 h2 {
@@ -240,4 +249,31 @@ p.muted {
   font-size: 3.6mm;
   line-height: 1.45;
   color: var(--muted);
+}
+
+/* PDF Download Link Styling */
+.pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white !important;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-download:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.pdf-download:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
