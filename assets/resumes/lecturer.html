@@ -15,41 +15,13 @@
 <body class="A4">
   <section class="sheet padding-0">
     <div class="resume">
-      <aside class="left">
+      <aside class="left" id="sidebar">
         <div class="l-wrap">
           <div class="photo-wrap">
             <img src="/assets/images/zaf.png" alt="Profile" />
           </div>
           <div class="name-block">
             <div class="name">Hi, I'm Zaf 👋</div>
-          </div>
-
-          <div class="l-section">
-
-            <h4>Academic</h4>
-            <div class="l-div"></div>
-            <div class="academic">
-              <div class="row">
-                <span>ID Number</span>
-                199012102024211023
-              </div>
-              <div class="row">
-                <span>Full Name</span>
-                Ahmad Zafrullah Mardiansyah
-              </div>
-              <div class="row">
-                <span>Degree</span>
-                S.T., M.Eng.
-              </div>
-              <div class="row">
-                <span>Role</span>
-                Asisten Ahli
-              </div>
-              <div class="row">
-                <span>Affiliation</span>
-                Department of<br/>Informatics Engineering<br/>Faculty of Engineering
-            </div>
-
           </div>
 
           <div class="l-section">
@@ -76,7 +48,36 @@
               </div>
             </div>
           </div>
-          <br/>
+
+          <div class="l-section">
+
+            <h4>Academic</h4>
+            <div class="l-div"></div>
+            <div class="academic">
+              <div class="row">
+                <span>ID Number</span>
+                199012102024211023
+              </div>
+              <div class="row">
+                <span>Full Name</span>
+                Ahmad Zafrullah Mardiansyah
+              </div>
+              <div class="row">
+                <span>Designation</span>
+                S.T., M.Eng.
+              </div>
+              <div class="row">
+                <span>Role</span>
+                Asisten Ahli
+              </div>
+              <div class="row">
+                <span>Affiliation</span>
+                Department of<br/>Informatics Engineering<br/>Faculty of Engineering
+            </div>
+
+          </div>
+
+      
           <div class="l-section">
             <h4>About</h4>
             <div class="l-div"></div>
@@ -178,89 +179,11 @@
 
   <section class="sheet padding-0">
     <div class="resume">
-      <aside class="left">
-        <div class="l-wrap">
-          <div class="photo-wrap">
-            <img src="/assets/images/zaf.png" alt="Profile" />
-          </div>
-          <div class="name-block">
-            <div class="name">Hi, I'm Zaf 👋</div>
-          </div>
-
-          <div class="l-section">
-
-            <h4>Academic</h4>
-            <div class="l-div"></div>
-            <div class="academic">
-              <div class="row">
-                <span>ID Number</span>
-                199012102024211023
-              </div>
-              <div class="row">
-                <span>Full Name</span>
-                Ahmad Zafrullah Mardiansyah
-              </div>
-              <div class="row">
-                <span>Degree</span>
-                S.T., M.Eng.
-              </div>
-              <div class="row">
-                <span>Role</span>
-                Asisten Ahli
-              </div>
-              <div class="row">
-                <span>Affiliation</span>
-                Department of<br/>Informatics Engineering<br/>Faculty of Engineering
-            </div>
-
-          </div>
-
-          <div class="l-section">
-
-            <h4>Contact</h4>
-            <div class="l-div"></div>
-            <div class="contact">
-              <div class="row">
-                🚀 &nbsp;<span><a href="https://unr.am/zaf">unr.am/zaf</a></span>
-              </div>
-              <div class="row">
-                ✉️ &nbsp;<span class="email-address">Loading...</span>
-              </div>
-              <div class="row">
-                ☎️ &nbsp;<span class="phone-number">Loading...</span>
-              </div>
-              <div class="row">
-                🔐 &nbsp;
-                <span>
-                  <a class="pgp"
-                    href="https://keys.openpgp.org/vks/v1/by-fingerprint/C94DA5EAB31D16273E90E555249E996D108B8D7F"
-                    target="_blank">249E<span></span>996D<span></span>108B<span></span>8D7F</a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <br/>
-          <div class="l-section">
-            <h4>About</h4>
-            <div class="l-div"></div>
-            <div class="about">
-              I teach Computer Science &mdash; and I'm still learning it, too.<br />
-              <br />
-              That's the thing about education: it never really ends. I bring that mindset into every lecture,
-              discussion, and assignment I design.
-            </div>
-          </div>
-
-          <div class="qr">
-            <br/>
-            <img src="/assets/images/qr-resume-lecturer.png" alt="QR Code" />
-          </div>
-
-        </div>
+      <aside class="left sidebar-copy">
+        <!-- This will be populated by JavaScript -->
       </aside>
 
       <main class="right">
-
         <section class="block">
           <h2>Honors & Awards</h2>
           <div class="timeline">
@@ -320,6 +243,13 @@
   <script>
     // Hide phone number and email from crawlers by loading them with JavaScript
     document.addEventListener('DOMContentLoaded', function () {
+      // Copy sidebar content to second page
+      const originalSidebar = document.getElementById('sidebar');
+      const copySidebar = document.querySelector('.sidebar-copy');
+      if (originalSidebar && copySidebar) {
+        copySidebar.innerHTML = originalSidebar.innerHTML;
+      }
+
       // Encode the phone number to make it less readable in source
       const phoneData = ['62', '878', '6405', '2132'];
       const phoneNumber = '+' + phoneData.join('-');
