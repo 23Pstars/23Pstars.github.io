@@ -262,7 +262,7 @@ h2 {
 
 p.muted {
   color: var(--muted);
-  margin: 2mm 0 0;
+  margin: 0 0 16px;
   font-size: 3.7mm;
   line-height: 1.45;
 }
@@ -446,6 +446,28 @@ p.muted {
   font-weight: 600;
   font-style: normal;
   margin-top: 4px;
+}
+
+/* Simple Skills Section Styling */
+.right .skills {
+  margin-top: 4mm;
+}
+
+.right .skills ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.right .skills ol li {
+  margin: 6px 0;
+  padding: 0;
+  font-size: 3.7mm;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--ink);
+  text-indent: -1.2em;
+  padding-left: 1.2em;
 }
 
 /* QR Code Styling */
