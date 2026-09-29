@@ -232,6 +232,151 @@
 
 }
 
+// Lecture titles use a compact accent to strengthen the content hierarchy.
+#lectures ._lists ._item ._title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  padding-bottom: 9px;
+  color: #263f57;
+  border-bottom: 1px solid #e7edf2;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+
+  &::before {
+    content: "";
+    flex: 0 0 4px;
+    align-self: stretch;
+    min-height: 24px;
+    background: linear-gradient(180deg, #1f5fae, #6842a0);
+    border-radius: 999px;
+  }
+
+  .mk_id {
+    margin-left: auto;
+    color: #7b8b99;
+    font-size: 13px;
+
+    &:hover,
+    &:focus-visible {
+      color: #1f5fae;
+    }
+  }
+}
+
+// Material links need to remain visually distinct from unlinked lecture topics.
+#lectures ._lists ._item ._content a {
+  color: #1f5fae;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(31, 95, 174, 0.45);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color .15s ease, background-color .15s ease,
+    text-decoration-color .15s ease;
+
+  &:visited {
+    color: #6842a0;
+    text-decoration-color: rgba(104, 66, 160, 0.45);
+  }
+
+  &:hover {
+    color: #17477f;
+    background-color: rgba(31, 95, 174, 0.08);
+    text-decoration-color: currentColor;
+  }
+
+  &:focus-visible {
+    color: #17477f;
+    background-color: rgba(31, 95, 174, 0.1);
+    outline: 2px solid #1f5fae;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+}
+
+#lectures .academic-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#lectures .academic-year-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  color: #536273;
+  background-color: #f3f6f9;
+  border: 1px solid #dce3ea;
+  border-radius: 4px;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+#lectures .lecture-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  .back-to-top {
+    margin-left: auto;
+  }
+}
+
+#lectures .course-module-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 8px;
+  color: #456684;
+  background-color: #f7f9fb;
+  border: 1px solid #d7e0e8;
+  border-radius: 5px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: color .15s ease, background-color .15s ease,
+    border-color .15s ease;
+
+  .course-module-icon {
+    width: 13px;
+    height: 13px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.75;
+  }
+
+  &:visited {
+    color: #456684;
+  }
+
+  &:hover {
+    color: #234d73;
+    background-color: #eef3f7;
+    border-color: #b8c8d6;
+  }
+
+  &:focus-visible {
+    color: #234d73;
+    outline: 2px solid #1f5fae;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    background-color: #e4ebf1;
+  }
+}
+
 #portfolios {
   ._count {
     text-align: right;
