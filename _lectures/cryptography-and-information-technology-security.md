@@ -14,8 +14,8 @@ link_moodle: "https://berajah-if.unram.ac.id/course/view.php?id=102"
 8. Midterm Exam
 9. [Asymmetric Cryptography 1: RSA in Practice](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQA2XoO4ryRWSKw4vdcHKdfQAbxfvNp5poStah4MEtJPA10?e=EWtfXI)
 10. [Asymmetric Cryptography 2: Keys and Digital Signatures](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQALMtUuA8sFRLaP9unWpZu1AdWEIln-axs316i4nM42EVo?e=HJOJsE)
-11. Advanced Hashing: Integrity Verification
-12. Security Threats 1: MITM and Brute-Force Attacks
-13. Security Threats 2: Phishing and Malware
-14. Security Solutions 1: HTTPS, SSL, TLS, and Data Encryption
-15. Security Solutions 2: 2FA, IDS, and Integrated Security Design
+11. [Advanced Hashing: Integrity Verification](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQArpRqTzQqkTKw5di48AbMDAVBqa7idhoE7E9-HoPUfx7w?e=PaRIbE)
+12. [Security Threats 1: MITM and Brute-Force Attacks](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQBq1bh2dxObQ5UUoDOlsdhPAeAVZx5uhbzgvXZMNs3hv7U?e=Ez6LkF)
+13. [Security Threats 2: Phishing and Malware](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQCDndOpGnZkS4CQF9VJQVxPAcMaWeqlS24M0w29hI4ytso?e=wfdYh9)
+14. [Security Solutions 1: HTTPS, SSL, TLS, and Data Encryption](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQBVcwW4PXp8Q5KB_BvD_SqyAUeXqYAB_n6ugRikjo66V-s?e=QejI1s)
+15. [Security Solutions 2: 2FA, IDS, and Integrated Security Design](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQC0ZwLb4c3_Qb-sO_b8yom4AWOMoA1PcL84QBQt4mOIrBU?e=u7NaaR)
