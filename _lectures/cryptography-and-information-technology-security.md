@@ -12,8 +12,8 @@ link_moodle: "https://berajah-if.unram.ac.id/course/view.php?id=102"
 6. [Symmetric Encryption 2: Key Management](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQBXtg-JcibfSpwYyhbinG2WAURlxjICZtMBBo5r75f9mOY?e=EA7kQ8)
 7. [Symmetric Encryption 3: Testing Project](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQDQ1XtX8543S5Mu2JoNoCjuAVsy_8xl2DGVCMC2kzikutk?e=VPv3xg)
 8. Midterm Exam
-9. Asymmetric Cryptography 1: RSA in Practice
-10. Asymmetric Cryptography 2: Keys and Digital Signatures
+9. [Asymmetric Cryptography 1: RSA in Practice](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQA2XoO4ryRWSKw4vdcHKdfQAbxfvNp5poStah4MEtJPA10?e=EWtfXI)
+10. [Asymmetric Cryptography 2: Keys and Digital Signatures](https://unramacid-my.sharepoint.com/:p:/g/personal/zaf_unram_ac_id/IQALMtUuA8sFRLaP9unWpZu1AdWEIln-axs316i4nM42EVo?e=HJOJsE)
 11. Advanced Hashing: Integrity Verification
 12. Security Threats 1: MITM and Brute-Force Attacks
 13. Security Threats 2: Phishing and Malware
